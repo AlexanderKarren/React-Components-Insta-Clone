@@ -9,6 +9,7 @@ const SearchBar = () => {
         <i className="fab fa-instagram" />
       </div>
       <form className="search-form">
+        <div><i class="fas fa-search"></i></div>
         <input
           type="text"
           placeholder="Search"
