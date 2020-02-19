@@ -21,6 +21,10 @@
   padding:10px;
   font-size:120%;
 }
+
+.search-glass i {
+  color:rgba(51, 51, 51, 0.5);
+}
 .search-form input {
   text-align: left;
   color: #262626;
@@ -31,6 +35,10 @@
   font-size:inherit;
   font-family:inherit;
   margin-left:10px;
+}
+
+.search-form input::placeholder {
+  color:rgba(51, 51, 51, 0.5);
 }
 
 .image-wrapper {
