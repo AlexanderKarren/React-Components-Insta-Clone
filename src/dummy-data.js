@@ -69,7 +69,28 @@ const dummyData = [
                 text: "I really want a smaller phone than what Apple has done some good work here too."
             }
         ]
-    }
+    },
+    {
+        username: "alex",
+        thumbnailUrl: 'images/me.png',
+        imageUrl: 'images/rodin.png',
+        likes: 42,
+        timestamp: "July 15th 2017, 03:12:09 pm",
+        comments: [
+            {
+                username: "alex",
+                text: "I took this photo myself at the Musee de Rodin in Paris!"
+            },
+            {
+                username: "wow_SS",
+                text: "Sure, in the end, you got the legendary it was because you didn't specify that in macro."
+            },
+            {
+                username: "todayilearned_SS",
+                text: "Must have been a reply in regards to quality and in regards to some hackers and their mayhem causing activity. I think its safe to assume that at least some familiarity with it."
+            },
+        ]
+    },
 ];
 
 export default dummyData;

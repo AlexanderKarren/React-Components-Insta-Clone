@@ -1,15 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import Post from "./Post";
 import "./Posts.css";
 import dummyData from "../../dummy-data"
 
 const PostsPage = (props) => {
-  let noResults = false;
+  let noResults = true;
 
   return (
     <div className="posts-container-wrapper">
-      {dummyData.map(post => {
+      {dummyData.map((post, index) => {
         if (post.username.includes(props.keyWord)) {
+          noResults = false;
           return (
             <Post post={post}/>
           )

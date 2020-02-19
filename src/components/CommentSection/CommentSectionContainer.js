@@ -7,7 +7,7 @@ import "./Comment.css";
 const CommentSection = props => {
   const [comments, updateComments] = useState(props.comments);
   const [newComment, setNewComment] = useState("");
-  
+
   const handleChange = (event) => {
     setNewComment(event.target.value);
   }
@@ -15,7 +15,7 @@ const CommentSection = props => {
     event.preventDefault();
     if (newComment !== "") {
       const newArray = comments;
-      newArray.push({username: "Alex", text: newComment})
+      newArray.push({username: "alex", text: newComment})
       updateComments(newArray);
       setNewComment("");
     }
