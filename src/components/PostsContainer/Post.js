@@ -9,9 +9,17 @@ import "./Posts.css";
 // pass props in this file to
 const Post = props => {
   const [likes, setLikes] = useState(props.post.likes);
+  const [liked, setLikeStatus] = useState(false);
 
   const likePost = () => {
-    setLikes(likes + 1);
+    if (liked === false) {
+      setLikes(likes + 1);
+      setLikeStatus(true);
+    }
+    else {
+      setLikes(likes - 1);
+      setLikeStatus(false);
+    }
   }
 
   return (
@@ -29,7 +37,7 @@ const Post = props => {
           src={props.post.imageUrl}
         />
       </div>
-      <LikeSection likes={likes} likePost={likePost}/>
+      <LikeSection likes={likes} liked={liked} likePost={likePost}/>
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments}
