@@ -1,20 +1,21 @@
-//Complete the necessary code in this file
-// import useState
 import React from "react";
 import Post from "./Post";
 import "./Posts.css";
-// import data
 import dummyData from "../../dummy-data"
 
-const PostsPage = () => {
-  // set up state for your data
+const PostsPage = (props) => {
+  let noResults = false;
+
   return (
     <div className="posts-container-wrapper">
       {dummyData.map(post => {
-        return (
-          <Post post={post}/>
-        )
+        if (post.username.includes(props.keyWord)) {
+          return (
+            <Post post={post}/>
+          )
+        }
       })}
+      <div style={noResults ? {display:"block"} : {display:"none"}}>There are no results matching your search "{props.keyWord}"</div>
     </div>
   );
 };

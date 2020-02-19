@@ -46,7 +46,7 @@ const dummyData = [
         ]
     },
     {
-        username: "Doge",
+        username: "doge",
         thumbnailUrl: 'images/doge.png',
         imageUrl: 'images/chicken_waffle.png',
         likes: 512,

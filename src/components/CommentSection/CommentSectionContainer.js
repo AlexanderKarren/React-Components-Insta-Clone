@@ -7,9 +7,9 @@ import "./Comment.css";
 const CommentSection = props => {
   const [comments, updateComments] = useState(props.comments);
   const [newComment, setNewComment] = useState("");
+  
   const handleChange = (event) => {
     setNewComment(event.target.value);
-    console.log(newComment);
   }
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,7 +26,7 @@ const CommentSection = props => {
       {props.comments.map(comment => {
         return <Comment comment={comment.text} username={comment.username}/>
       })}
-      <CommentInput comment={newComment} comments={comments} handleSubmit={handleSubmit} handleChange={handleChange}/>
+      <CommentInput comment={newComment} handleSubmit={handleSubmit} handleChange={handleChange}/>
     </div>
   );
 };
