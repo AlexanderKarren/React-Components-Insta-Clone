@@ -1,7 +1,7 @@
 const dummyData = [
     {
         username: "philzcoffee",
-        thumbnailUrl: 'https://instagram.fsjo9-1.fna.fbcdn.net/vp/d4728e507fe1eb2895fb7ca394bb6431/5E4122B1/t51.2885-15/s150x150/71118783_2434459423505735_6295784028176668008_n.jpg?_nc_ht=instagram.fsjo9-1.fna.fbcdn.net',
+        thumbnailUrl: 'images/coffee.png',
         imageUrl: 'https://images.unsplash.com/photo-1477763858572-cda7deaa9bc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1876&q=80',
         likes: 400,
         timestamp: "July 17th 2017, 12:42:40 pm",
@@ -22,7 +22,7 @@ const dummyData = [
     },
     {
         username: "twitch",
-        thumbnailUrl: 'https://icon2.cleanpng.com/20180320/sqe/kisspng-twitch-computer-icons-streaming-media-youtube-live-tv-twitch-icon-5ab19172461392.001176751521586546287.jpg',
+        thumbnailUrl: 'images/twitch.png',
         imageUrl: 'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80',
         likes: 4307,
         timestamp: "July 15th 2017, 03:12:09 pm",
@@ -44,7 +44,53 @@ const dummyData = [
                 text: "It that injustice"
             }
         ]
-    }
+    },
+    {
+        username: "doge",
+        thumbnailUrl: 'images/doge.png',
+        imageUrl: 'images/chicken_waffle.png',
+        likes: 512,
+        timestamp: "July 15th 2017, 03:12:09 pm",
+        comments: [
+            {
+                username: "doge",
+                text: "You are an example of hyperdeflation - computers today are literally a million times cheaper than they were back then."
+            },
+            {
+                username: "Aquariums_SS",
+                text: "First things first, I'd say water test one more time and money you put in the tank."
+            },
+            {
+                username: "gaybros_SS",
+                text: "You wouldn't know I was gay but I remember having deodorant sprayed in my face so I'm not complaining)."
+            },
+            {
+                username: "apple_SS",
+                text: "I really want a smaller phone than what Apple has done some good work here too."
+            }
+        ]
+    },
+    {
+        username: "alex",
+        thumbnailUrl: 'images/me.png',
+        imageUrl: 'images/rodin.png',
+        likes: 42,
+        timestamp: "July 15th 2017, 03:12:09 pm",
+        comments: [
+            {
+                username: "alex",
+                text: "I took this photo myself at the Musee de Rodin in Paris!"
+            },
+            {
+                username: "wow_SS",
+                text: "Sure, in the end, you got the legendary it was because you didn't specify that in macro."
+            },
+            {
+                username: "todayilearned_SS",
+                text: "Must have been a reply in regards to quality and in regards to some hackers and their mayhem causing activity. I think its safe to assume that at least some familiarity with it."
+            },
+        ]
+    },
 ];
 
 export default dummyData;
